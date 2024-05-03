@@ -1,13 +1,13 @@
 [project]
-name = "openfisca-country_template"
-version = "7.1.0"
-description = "OpenFisca Rules as Code model for Country-Template."
+name = "openfisca-senegal"
+version = "0.0.1"
+description = "OpenFisca Rules as Code model for Senegal."
 readme = "README.md"
 keywords = ["microsimulation", "tax", "benefit", "rac", "rules-as-code"]
 authors = []
 maintainers = []
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
+    "Development Status :: 1 - Planning",
     "License :: OSI Approved :: GNU Affero General Public License v3",
     "Operating System :: POSIX",
     "Programming Language :: Python",
@@ -20,11 +20,11 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/openfisca/country-template"
-Repository = "https://github.com/openfisca/country-template"
+Homepage = "git://github.com/MattiSG/openfisca-senegal.git"
+Repository = "git://github.com/MattiSG/openfisca-senegal.git"
 Documentation = "https://openfisca.org/doc"
-Issues = "https://github.com/openfisca/country-template/issues"
-Changelog = "https://github.com/openfisca/country-template/blob/main/CHANGELOG.md"
+Issues = "git://github.com/MattiSG/openfisca-senegal.git/issues"
+Changelog = "git://github.com/MattiSG/openfisca-senegal.git/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 dev = [
@@ -38,7 +38,7 @@ dev = [
 
 [tool.pytest.ini_options]
 addopts = "--showlocals --doctest-modules"
-testpaths = [ "openfisca_country_template/tests" ]
+testpaths = [ "openfisca_senegal/tests" ]
 python_files = "**/*.py"
 filterwarnings = [
     "error",
@@ -71,10 +71,10 @@ group_by_package = "true"
 include_trailing_comma = "true"
 multi_line_output = "8"
 py_version = "39"
-known_first_party = "openfisca_country_template"
+known_first_party = "openfisca_senegal"
 known_openfisca = [
     "openfisca_core",
-    "openfisca_country_template"
+    "openfisca_senegal"
 ]
 known_typing = [
     "mypy*", 
